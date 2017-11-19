@@ -1,0 +1,3 @@
+[submodule "deps/liborion"]
+	path = deps/liborion
+	url = git@github.com:retrohacker/c-scons

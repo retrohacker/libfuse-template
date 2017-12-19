@@ -8,6 +8,7 @@ CCFLAGS = []
 # Add fuse
 LIBS.extend(["fuse"])
 CCFLAGS.extend(["-D_FILE_OFFSET_BITS=64"])
+CCFLAGS.extend(["-D FUSE_USE_VERSION=31"])
 
 
 # Add liborion
@@ -19,5 +20,10 @@ SConscript("./deps/liborion/SConscript")
 env = Environment(LIBS = LIBS, LIBPATH = LIBPATH, CCFLAGS = CCFLAGS)
 
 env.Program("orion", [
+    "readdir.c",
+    "access.c",
+    "getattr.c",
+    "prefix.c",
+    "init.c",
     "index.c"
 ])

@@ -1,8 +1,4 @@
 #include "prefix.h" /* prefix directory cwd */
-#include <string.h> /* strlen strcat strcpy */
-#include <stdlib.h> /* malloc free */
-#include <string.h> /* strcat strcpy */
-#include "./deps/liborion/orion.h" /* logger */
 
 char* directory = "bar";
 char* prefix = NULL;

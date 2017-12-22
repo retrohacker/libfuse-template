@@ -13,4 +13,4 @@ CCFLAGS.extend(["-D FUSE_USE_VERSION=26"])
 # Tell scons about everything we setup above
 env = Environment(LIBS = LIBS, LIBPATH = LIBPATH, CCFLAGS = CCFLAGS)
 
-env.Program("orion", Glob("*.c"))
+env.Program("fuse", Glob("*.c"))

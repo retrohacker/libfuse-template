@@ -7,6 +7,6 @@ int o_write(
     off_t offset,
     struct fuse_file_info* fi
 ) {
-  logger(ERROR, "UNIMPLEMENTED: write\n");
+  logger(ERROR, "UNIMPLEMENTED: write, path: %s\n", path);
   return -1;
 }

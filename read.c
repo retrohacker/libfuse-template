@@ -7,6 +7,6 @@ int o_read(
     off_t offset,
     struct fuse_file_info* fi
 ) {
-  logger(ERROR, "UNIMPLEMENTED: read\n");
+  logger(ERROR, "UNIMPLEMENTED: read, path: %s\n", path);
   return -1;
 }

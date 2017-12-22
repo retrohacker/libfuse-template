@@ -6,6 +6,6 @@ int o_lock(
     int cmd,
     struct flock* locks
 ) {
-  logger(ERROR, "UNIMPLEMENTED: lock\n");
+  logger(ERROR, "UNIMPLEMENTED: lock, path: %s\n", path);
   return -1;
 }

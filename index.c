@@ -71,7 +71,7 @@ int main(int argc, char** argv) {
   set_log_level(DEBUG);
   set_log_output(stdout);
   generate_prefix();
-  logger(DEBUG, "Mounting orion at %s\n", argv[2]);
+  logger(DEBUG, "Mounting fuse at %s\n", argv[2]);
 
   return fuse_main(argc, argv, &ops, NULL);
 }

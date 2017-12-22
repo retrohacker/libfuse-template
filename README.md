@@ -114,6 +114,32 @@ the filesystem too).
 
 ```
 $ ./fuse -f foo
+Attempting to copy cwd into buffer of size 10
+Result too large
+Attempting to copy cwd into buffer of size 20
+Result too large
+Attempting to copy cwd into buffer of size 30
+Result too large
+Attempting to copy cwd into buffer of size 40
+Undefined error: 0
+Started in directory: /Users/wblankenship/Development/orionfs (39)
+Mounting fuse at foo
+UNIMPLEMENTED: init
+UNIMPLEMENTED: statfs, path: /
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: getattr, path: /.MobileBackups
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: getattr, path: /.MobileBackups.trash
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: getattr, path: /.MobileBackups.trash
+UNIMPLEMENTED: statfs, path: /
+UNIMPLEMENTED: statfs, path: /
+UNIMPLEMENTED: statfs, path: /
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: getattr, path: /
+UNIMPLEMENTED: destroy
 ```
 
 This will start the fuse binary in the foreground and bind it to the directory

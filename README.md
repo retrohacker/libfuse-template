@@ -160,6 +160,10 @@ creating bugs that only happen when you aren't looking at stdout!
 To help with this case, we included the file `./prefix.c` which allows us to
 capture the current working directory prior to starting fuse.
 
+## Free dynamic memory
+
+If you use `resolve_prefix` you need to call `free` on the returned string, otherwise your application will leak memory.
+
 # Files
 
 * `index.c` - Configures and starts the fuse filesystem

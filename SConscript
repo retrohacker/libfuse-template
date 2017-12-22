@@ -10,11 +10,6 @@ LIBS.extend(["fuse"])
 CCFLAGS.extend(["-D_FILE_OFFSET_BITS=64"])
 CCFLAGS.extend(["-D FUSE_USE_VERSION=26"])
 
-# Add liborion
-LIBS.extend(["orion"])
-LIBPATH.extend(["./deps/liborion"])
-SConscript("./deps/liborion/SConscript")
-
 # Tell scons about everything we setup above
 env = Environment(LIBS = LIBS, LIBPATH = LIBPATH, CCFLAGS = CCFLAGS)
 

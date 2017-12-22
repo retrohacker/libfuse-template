@@ -134,6 +134,14 @@ creating bugs that only happen when you aren't looking at stdout!
 To help with this case, we included the file `./prefix.c` which allows us to
 capture the current working directory prior to starting fuse.
 
+# Files
+
+* `index.c` - Configures and starts the fuse filesystem
+* `Sconscript` - Handles building the binary
+* `prefix.{c,h}` - Handles capturing the current working directory at start
+* `logger.{c,h}` - A super simple logger supporting writing to stdout or a file
+* Everything else maps to a fuse operation!
+
 # Documentation
 
 There is a handy [doxygen

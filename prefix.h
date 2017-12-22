@@ -1,6 +1,6 @@
 #ifndef prefix_h
 #define prefix_h
-#include "./deps/liborion/orion.h" /* logger */
+#include "./logger.h" /* logger */
 #include <string.h> /* strlen strcat strcpy */
 #include <unistd.h> /* getcwd */
 #include <stdlib.h> /* malloc free */

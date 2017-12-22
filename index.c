@@ -26,7 +26,7 @@
 
 #include <fuse.h> /* fuse_main */
 
-#include "./deps/liborion/orion.h" /* set_log_level set_log_output logger */
+#include "./logger.h" /* set_log_level set_log_output logger */
 
 static struct fuse_operations ops = {
   .init = o_init,

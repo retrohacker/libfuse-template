@@ -12,12 +12,12 @@ whatever stubs you see being activated!
 
 # Building
 
-This project uses [scons] for building. Scons is a super simple build tool for
-compiling C, it can be much easier to read compared to a Makefile, plus it is
-100% python so you can do as much or as little with it as you like. The
-philosophy of this template was to keep the build tooling simple, so that it
-stayed out of the way when trying to build a filesystem. Scons allows us to do
-that!
+This project uses [scons](http://scons.org/) for building. Scons is a super
+simple build tool for compiling C, it can be much easier to read compared to a
+Makefile, plus it is 100% python so you can do as much or as little with it as
+you like. The philosophy of this template was to keep the build tooling simple,
+so that it stayed out of the way when trying to build a filesystem. Scons
+allows us to do that!
 
 ## Dependencies
 

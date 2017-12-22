@@ -1,10 +1,10 @@
 #ifndef prefix_h
 #define prefix_h
+#include "./deps/liborion/orion.h" /* logger */
 #include <string.h> /* strlen strcat strcpy */
 #include <unistd.h> /* getcwd */
 #include <stdlib.h> /* malloc free */
 #include <string.h> /* strcat strcpy */
-#include "./deps/liborion/orion.h" /* logger */
 #include <errno.h> /* errno */
 // Directory is the passthrough directory we create for the filesystem
 char* directory;
@@ -12,7 +12,6 @@ char* directory;
 char* prefix;
 // The current working directory for the process
 char* cwd;
-
 char* resolve_prefix(const char*);
 void generate_prefix();
 #endif

@@ -10,9 +10,6 @@ char* resolve_prefix(const char* path) {
   long long result_len = path_len + prefix_len + 1;
   char* result = malloc(result_len * sizeof(char));
   strcpy(result, prefix);
-  if(path[path_len - 1] != '/') {
-    strcat(result, "/");
-  }
   strcat(result, path);
   return result;
 }
